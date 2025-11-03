@@ -216,10 +216,12 @@ nav.nav a:hover {
 .btn-primary {
   background: #b31217;
   box-shadow: 0 8px 24px rgba(179,18,23,.35);
+  border-radius: 15px;
 }
 .btn-ghost {
   background: rgba(255,255,255,.4);
   border: 1px solid rgba(179,18,23,.1);
+  border-radius: 15px;
 }
 
 /* responsive */
