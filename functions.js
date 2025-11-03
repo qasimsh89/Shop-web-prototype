@@ -96,3 +96,29 @@ if (qtyInput && qtyBtns.length) {
   drawer?.querySelectorAll("a").forEach((a) => {
     a.addEventListener("click", closeMenu);
   });
+
+// hero slider
+ (function() {
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.hero-dot');
+    let current = 0;
+
+    function goTo(i) {
+      slides.forEach(s => s.classList.remove('active'));
+      dots.forEach(d => d.classList.remove('active'));
+      slides[i].classList.add('active');
+      dots[i].classList.add('active');
+      current = i;
+    }
+
+    dots.forEach((dot, idx) => {
+      dot.addEventListener('click', () => goTo(idx));
+    });
+
+    // auto-rotate
+    setInterval(() => {
+      let next = current + 1;
+      if (next >= slides.length) next = 0;
+      goTo(next);
+    }, 7000);
+  })();

@@ -54,25 +54,70 @@
   </header>
 
   <main>
-    <!-- HERO -->
-    <section class="hero" id="hero">
-      <div class="container hero-inner">
-        <div>
-          <span class="badge">Prototype for rebuild · WordPress-ready</span>
-          <h1>Welcome to Newcastle Pro Sound Web Prototype.</h1>
-          <p class="lead">
-            This is a preview of how we can reorganise services, add better imagery, and make it easier for customers to find installs and products.
-          </p>
-          <div class="actions">
-            <a href="#contact" class="btn-primary">Let's build it</a>
-            <a href="#services" class="btn-ghost">See install sections →</a>
+<!-- HERO SLIDER -->
+<section class="hero hero-slider" id="hero">
+  <div class="container">
+    <div class="hero-shell">
+      <!-- slides -->
+      <div class="hero-slides" id="heroSlides">
+        <!-- slide 1 -->
+        <article class="hero-slide active" data-bg="car">
+          <div class="hero-left">
+            <span class="badge">Car audio · Head units · Apple CarPlay</span>
+            <h1>Upgrade your in-car sound in Newcastle.</h1>
+            <p class="lead">Clean installs, real brands (Kenwood, Pioneer, Kicker), and local support. We supply & install.</p>
+            <div class="actions">
+              <a href="#contact" class="btn-primary">Book an install</a>
+              <a href="#categories" class="btn-ghost">Browse categories</a>
+            </div>
           </div>
-          <div class="hero-meta">
-            <span>Security + performance in scope</span>
-            <span>WooCommerce ready</span>
-            <span>2k-3k product import</span>
+          <div class="hero-right">
+            <img src="images/caraudio.png" alt="Car audio install">
           </div>
-        </div>
+        </article>
+
+        <!-- slide 2 -->
+        <article class="hero-slide" data-bg="4x4">
+          <div class="hero-left">
+            <span class="badge">4x4 · Touring · Camera</span>
+            <h1>4x4 comms, cameras & lighting.</h1>
+            <p class="lead">We kit out work utes, fleets and touring rigs. Reversing cameras, DVRs, UHF, driving lights.</p>
+            <div class="actions">
+              <a href="#services" class="btn-primary">See 4x4 installs</a>
+              <a href="#contact" class="btn-ghost">Request a quote</a>
+            </div>
+          </div>
+          <div class="hero-right">
+            <img src="images/ultravision.png" alt="4x4 lighting">
+          </div>
+        </article>
+
+        <!-- slide 3 -->
+        <article class="hero-slide" data-bg="marine">
+          <div class="hero-left">
+            <span class="badge">Marine & leisure</span>
+            <h1>Marine audio for boats & jet skis.</h1>
+            <p class="lead">Weather-proof speakers and amps with neat wiring. Perfect for weekenders.</p>
+            <div class="actions">
+              <a href="#contact" class="btn-primary">Book marine job</a>
+              <a href="#services" class="btn-ghost">View services</a>
+            </div>
+          </div>
+          <div class="hero-right">
+            <img src="images/boat-scaled-300x200.jpg" alt="Marine audio">
+          </div>
+        </article>
+      </div>
+
+      <!-- slider controls -->
+      <div class="hero-controls">
+        <button class="hero-dot active" data-slide="0">Car Audio</button>
+        <button class="hero-dot" data-slide="1">4x4 / Touring</button>
+        <button class="hero-dot" data-slide="2">Marine</button>
+      </div>
+    </div>
+  </div>
+</section>
 
         <!-- this MUST point to the exact filename in /images -->
         <div class="hero-img-wrap reveal">

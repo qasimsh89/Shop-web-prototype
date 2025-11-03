@@ -26,8 +26,8 @@
 
 body {
   margin: 0;
-  background: var(--page-bg);
-  color: var(--ink);
+  background: #f4f5f7;
+  color: #131722;
   line-height: 1.6;
 }
 
@@ -132,100 +132,109 @@ nav.nav a:hover {
   color: #131722;
 }
 
-/* ---------- HERO ---------- */
-.hero {
-  background: radial-gradient(circle at top, rgba(179,18,23,.08), rgba(245,245,246,0) 40%), #f5f5f6;
-  padding: 3.1rem 0 2.8rem;
+/* HERO SLIDER */
+.hero.hero-slider {
+  padding: 3.2rem 0 2.6rem;
 }
-.hero-inner {
-  background: #fff;
-  border: 1px solid rgba(0,0,0,.02);
-  border-radius: 1.3rem;
-  box-shadow: 0 18px 44px rgba(15,23,42,.05);
-  display: grid;
-  grid-template-columns: 1.05fr .95fr;
-  gap: 2rem;
-  align-items: center;
-  padding: 2.2rem 2.2rem 2rem;
-}
-.badge {
-  display: inline-block;
-  background: rgba(179,18,23,.12);
-  color: #571014;
-  padding: .25rem .7rem;
-  border-radius: 999px;
-  font-size: .7rem;
-  font-weight: 500;
-  margin-bottom: 1.1rem;
-}
-.hero h1 {
-  font-size: clamp(2.2rem, 3.3vw, 2.8rem);
-  margin: 0 0 1.1rem;
-  line-height: 1.05;
-  letter-spacing: -.02em;
-  color: #131722;
-}
-.lead {
-  color: #5f6470;
-  max-width: 34rem;
-  margin-bottom: 1.5rem;
-}
-.actions {
-  display: flex;
-  gap: .75rem;
-  margin-bottom: 1.25rem;
-  flex-wrap: wrap;
-}
-.btn-primary {
-  background: var(--accent);
-  color: #fff;
-  border: none;
-  padding: .7rem 1.3rem;
-  border-radius: .7rem;
-  font-weight: 600;
-}
-.btn-ghost {
-  border: 1px solid rgba(0,0,0,.07);
-  background: #fff;
-  color: #131722;
-  padding: .7rem 1.1rem;
-  border-radius: .7rem;
-  font-weight: 600;
-}
-.hero-meta {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  font-size: .75rem;
-  color: #5f6470;
-}
-.hero-img-wrap {
-  border-radius: 1.1rem;
+.hero-shell {
+  background: linear-gradient(135deg, #ffffff 0%, #ffe7e7 100%);
+  border: 1px solid rgba(179,18,23,.06);
+  border-radius: 1.4rem;
+  box-shadow: 0 18px 35px rgba(179,18,23,.08);
   overflow: hidden;
-  border: 1px solid rgba(0,0,0,.03);
-  background: #000;
-  min-height: 260px;
+  position: relative;
+  min-height: 360px;
+}
+.hero-slides {
   position: relative;
 }
-.hero-img-wrap img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.hero-overlay {
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
-  background: rgba(255,255,255,.95);
-  border: 1px solid rgba(0,0,0,.02);
-  border-radius: .8rem;
-  padding: .5rem .8rem;
-  display: flex;
-  gap: 1.5rem;
+.hero-slide {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 1.7rem;
   align-items: center;
-  font-size: .7rem;
+  padding: 2.3rem 2.2rem 2.1rem;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  transition: opacity .35s ease;
+}
+.hero-slide.active {
+  opacity: 1;
+  pointer-events: auto;
+  position: relative;
+}
+.hero-left h1 {
+  font-size: clamp(2.15rem, 3.3vw, 2.65rem);
+  margin-bottom: 1.05rem;
+  color: #111;
+}
+.hero-right {
+  justify-self: center;
+  max-width: 420px;
+}
+.hero-right img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 1.2rem;
+  box-shadow: 0 12px 30px rgba(0,0,0,.08);
+  background: #fff;
 }
 
+/* slider dots/buttons */
+.hero-controls {
+  display: flex;
+  gap: .55rem;
+  padding: 0 1.3rem 1.2rem;
+  flex-wrap: wrap;
+}
+.hero-dot {
+  background: rgba(255,255,255,.5);
+  border: 1px solid transparent;
+  border-radius: .7rem;
+  padding: .4rem .9rem .45rem;
+  font-size: .74rem;
+  font-weight: 600;
+  color: #6b7280;
+  cursor: pointer;
+  transition: .15s;
+}
+.hero-dot.active {
+  background: #b31217;
+  color: #fff;
+  border-color: rgba(179,18,23,.1);
+  box-shadow: 0 10px 20px rgba(179,18,23,.35);
+}
+
+/* badge/button tweaks */
+.badge {
+  background: rgba(179,18,23,.09);
+  color: #7c1610;
+}
+.btn-primary {
+  background: #b31217;
+  box-shadow: 0 8px 24px rgba(179,18,23,.35);
+}
+.btn-ghost {
+  background: rgba(255,255,255,.4);
+  border: 1px solid rgba(179,18,23,.1);
+}
+
+/* responsive */
+@media (max-width: 980px) {
+  .hero-slide {
+    grid-template-columns: 1fr;
+    padding: 1.6rem 1.2rem 1.4rem;
+  }
+  .hero-right {
+    max-width: 100%;
+  }
+  .hero-shell {
+    border-radius: 0;
+  }
+}
 /* ---------- SECTIONS ---------- */
 .section {
   padding: 3rem 0;
