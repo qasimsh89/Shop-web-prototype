@@ -54,59 +54,76 @@
   </header>
 
   <main>
-<!-- FULL-WIDTH HERO SLIDER -->
-<section class="fw-hero" id="hero">
-  <div class="fw-hero-track" id="fwHeroTrack">
-    <!-- slide 1 -->
-    <article class="fw-slide active" style="background-image: url('images/caraudio.png');">
-      <div class="fw-overlay"></div>
-      <div class="fw-content">
-        <span class="fw-badge">Car Audio · Head Units · CarPlay</span>
-        <h1>Newcastle Pro Sound — clean installs that look OEM.</h1>
-        <p>Supply & install for cars, 4x4 and work vehicles. We use brands you already trust.</p>
-        <div class="fw-actions">
+<!-- HERO SLIDER (freefrontend-style, adapted) -->
+<section class="hero-slider" id="hero">
+  <!-- slide 1 -->
+  <input type="radio" name="slider" id="slide-1" checked>
+  <!-- slide 2 -->
+  <input type="radio" name="slider" id="slide-2">
+  <!-- slide 3 -->
+  <input type="radio" name="slider" id="slide-3">
+
+  <div class="slides">
+    <!-- 1 -->
+    <div class="slide s1" style="background-image:url('images/caraudio.png');">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <span class="tag">Car Audio · CarPlay · OEM</span>
+        <h1>Clean in-car sound for Newcastle.</h1>
+        <p>Head units, amps, subs and dash installs — supply & install.</p>
+        <div class="actions">
           <a href="#contact" class="btn-primary">Book an install</a>
-          <a href="#categories" class="btn-ghost">View products</a>
+          <a href="#categories" class="btn-ghost">Browse products</a>
         </div>
       </div>
-    </article>
-
-    <!-- slide 2 -->
-    <article class="fw-slide" style="background-image: url('images/ultravision.png');">
-      <div class="fw-overlay"></div>
-      <div class="fw-content">
-        <span class="fw-badge">4x4 · Touring · Cameras</span>
+    </div>
+    <!-- 2 -->
+    <div class="slide s2" style="background-image:url('images/ultravision.png');">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <span class="tag">4x4 · Cameras · Fleet</span>
         <h1>4x4 lighting, cameras & comms.</h1>
-        <p>Perfect for tradies, fleets and weekend rigs.</p>
-        <div class="fw-actions">
+        <p>Perfect for tradies, fleets and touring rigs.</p>
+        <div class="actions">
           <a href="#services" class="btn-primary">See installs</a>
           <a href="#contact" class="btn-ghost">Request quote</a>
         </div>
       </div>
-    </article>
-
-    <!-- slide 3 -->
-    <article class="fw-slide" style="background-image: url('images/collab/boat-scaled-300x200.jpg');">
-      <div class="fw-overlay"></div>
-      <div class="fw-content">
-        <span class="fw-badge">Marine & Leisure</span>
-        <h1>Marine audio that can handle salt & spray.</h1>
-        <p>Boat and PWC audio fitted locally in Newcastle.</p>
-        <div class="fw-actions">
+    </div>
+    <!-- 3 -->
+    <div class="slide s3" style="background-image:url('images/boat-scaled-300x200.jpg');">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <span class="tag">Marine & Leisure</span>
+        <h1>Marine audio that survives salt.</h1>
+        <p>Boat and PWC audio fitted locally.</p>
+        <div class="actions">
           <a href="#contact" class="btn-primary">Book marine job</a>
           <a href="#services" class="btn-ghost">All services</a>
         </div>
       </div>
-    </article>
+    </div>
   </div>
 
-  <!-- slider buttons -->
-  <div class="fw-dots" id="fwDots">
-    <button class="fw-dot active" data-slide="0"></button>
-    <button class="fw-dot" data-slide="1"></button>
-    <button class="fw-dot" data-slide="2"></button>
+  <!-- dots / nav -->
+  <div class="nav-dots">
+    <label for="slide-1"></label>
+    <label for="slide-2"></label>
+    <label for="slide-3"></label>
+  </div>
+
+  <!-- arrows -->
+  <div class="nav-arrows">
+    <label for="slide-3" class="prev">‹</label>
+    <label for="slide-2" class="prev s2">‹</label>
+    <label for="slide-1" class="prev s3">‹</label>
+
+    <label for="slide-2" class="next">›</label>
+    <label for="slide-3" class="next s2">›</label>
+    <label for="slide-1" class="next s3">›</label>
   </div>
 </section>
+
     <!-- CATEGORIES -->
     <section class="section" id="categories">
       <div class="container">
