@@ -98,9 +98,9 @@ if (qtyInput && qtyBtns.length) {
   });
 
 // hero slider
- (function() {
-    const slides = document.querySelectorAll('.hero-slide');
-    const dots = document.querySelectorAll('.hero-dot');
+   (function () {
+    const slides = document.querySelectorAll('.fw-slide');
+    const dots = document.querySelectorAll('.fw-dot');
     let current = 0;
 
     function goTo(i) {
@@ -115,7 +115,7 @@ if (qtyInput && qtyBtns.length) {
       dot.addEventListener('click', () => goTo(idx));
     });
 
-    // auto-rotate
+    // auto rotate
     setInterval(() => {
       let next = current + 1;
       if (next >= slides.length) next = 0;

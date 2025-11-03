@@ -54,71 +54,59 @@
   </header>
 
   <main>
-<!-- HERO SLIDER -->
-<section class="hero hero-slider" id="hero">
-  <div class="container">
-    <div class="hero-shell">
-      <!-- slides -->
-      <div class="hero-slides" id="heroSlides">
-        <!-- slide 1 -->
-        <article class="hero-slide active" data-bg="car">
-          <div class="hero-left">
-            <span class="badge">Car audio · Head units · Apple CarPlay</span>
-            <h1>Upgrade your in-car sound in Newcastle.</h1>
-            <p class="lead">Clean installs, real brands (Kenwood, Pioneer, Kicker), and local support. We supply & install.</p>
-            <div class="actions">
-              <a href="#contact" class="btn-primary">Book an install</a>
-              <a href="#categories" class="btn-ghost">Browse categories</a>
-            </div>
-          </div>
-          <div class="hero-right">
-            <img src="images/product-images/caraudio.png" alt="Car audio install">
-          </div>
-        </article>
-
-        <!-- slide 2 -->
-        <article class="hero-slide" data-bg="4x4">
-          <div class="hero-left">
-            <span class="badge">4x4 · Touring · Camera</span>
-            <h1>4x4 comms, cameras & lighting.</h1>
-            <p class="lead">We kit out work utes, fleets and touring rigs. Reversing cameras, DVRs, UHF, driving lights.</p>
-            <div class="actions">
-              <a href="#services" class="btn-primary">See 4x4 installs</a>
-              <a href="#contact" class="btn-ghost">Request a quote</a>
-            </div>
-          </div>
-          <div class="hero-right">
-            <img src="images/product-images/ultravision.png" alt="4x4 lighting">
-          </div>
-        </article>
-
-        <!-- slide 3 -->
-        <article class="hero-slide" data-bg="marine">
-          <div class="hero-left">
-            <span class="badge">Marine & leisure</span>
-            <h1>Marine audio for boats & jet skis.</h1>
-            <p class="lead">Weather-proof speakers and amps with neat wiring. Perfect for weekenders.</p>
-            <div class="actions">
-              <a href="#contact" class="btn-primary">Book marine job</a>
-              <a href="#services" class="btn-ghost">View services</a>
-            </div>
-          </div>
-          <div class="hero-right">
-            <img src="images/collab/boat-scaled-300x200.jpg" alt="Marine audio">
-          </div>
-        </article>
+<!-- FULL-WIDTH HERO SLIDER -->
+<section class="fw-hero" id="hero">
+  <div class="fw-hero-track" id="fwHeroTrack">
+    <!-- slide 1 -->
+    <article class="fw-slide active" style="background-image: url('images/caraudio.png');">
+      <div class="fw-overlay"></div>
+      <div class="fw-content">
+        <span class="fw-badge">Car Audio · Head Units · CarPlay</span>
+        <h1>Newcastle Pro Sound — clean installs that look OEM.</h1>
+        <p>Supply & install for cars, 4x4 and work vehicles. We use brands you already trust.</p>
+        <div class="fw-actions">
+          <a href="#contact" class="btn-primary">Book an install</a>
+          <a href="#categories" class="btn-ghost">View products</a>
+        </div>
       </div>
+    </article>
 
-      <!-- slider controls -->
-      <div class="hero-controls">
-        <button class="hero-dot active" data-slide="0">Car Audio</button>
-        <button class="hero-dot" data-slide="1">4x4 / Touring</button>
-        <button class="hero-dot" data-slide="2">Marine</button>
+    <!-- slide 2 -->
+    <article class="fw-slide" style="background-image: url('images/ultravision.png');">
+      <div class="fw-overlay"></div>
+      <div class="fw-content">
+        <span class="fw-badge">4x4 · Touring · Cameras</span>
+        <h1>4x4 lighting, cameras & comms.</h1>
+        <p>Perfect for tradies, fleets and weekend rigs.</p>
+        <div class="fw-actions">
+          <a href="#services" class="btn-primary">See installs</a>
+          <a href="#contact" class="btn-ghost">Request quote</a>
+        </div>
       </div>
-    </div>
+    </article>
+
+    <!-- slide 3 -->
+    <article class="fw-slide" style="background-image: url('images/boat-scaled-300x200.jpg');">
+      <div class="fw-overlay"></div>
+      <div class="fw-content">
+        <span class="fw-badge">Marine & Leisure</span>
+        <h1>Marine audio that can handle salt & spray.</h1>
+        <p>Boat and PWC audio fitted locally in Newcastle.</p>
+        <div class="fw-actions">
+          <a href="#contact" class="btn-primary">Book marine job</a>
+          <a href="#services" class="btn-ghost">All services</a>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- slider buttons -->
+  <div class="fw-dots" id="fwDots">
+    <button class="fw-dot active" data-slide="0"></button>
+    <button class="fw-dot" data-slide="1"></button>
+    <button class="fw-dot" data-slide="2"></button>
   </div>
 </section>
-
     <!-- CATEGORIES -->
     <section class="section" id="categories">
       <div class="container">
