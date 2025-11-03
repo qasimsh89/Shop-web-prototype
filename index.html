@@ -27,8 +27,7 @@
   <header>
     <div class="container header-inner">
       <div class="logo">
-        <div class="logo-dot">NPS</div>
-        <div>Newcastle Pro Sound</div>
+        <img src="images/logo.png" alt="logo" height="100" width="100">
       </div>
       <nav class="nav">
         <a href="#hero">Home</a>
@@ -55,58 +54,29 @@
 
   <main>
 <!-- FULL-WIDTH HERO SLIDER -->
-<section class="fw-hero" id="hero">
-  <div class="fw-hero-track" id="fwHeroTrack">
-    <!-- slide 1 -->
-    <article class="fw-slide active" style="background-image: url('images/product-images/caraudio.png');">
-      <div class="fw-overlay"></div>
-      <div class="fw-content">
-        <span class="fw-badge">Car Audio · Head Units · CarPlay</span>
-        <h1>Newcastle Pro Sound — clean installs that look OEM.</h1>
-        <p>Supply & install for cars, 4x4 and work vehicles. We use brands you already trust.</p>
-        <div class="fw-actions">
-          <a href="#contact" class="btn-primary">Book an install</a>
-          <a href="#categories" class="btn-ghost">View products</a>
-        </div>
-      </div>
-    </article>
-
-    <!-- slide 2 -->
-    <article class="fw-slide" style="background-image: url('images/product-images/ultravision.png');">
-      <div class="fw-overlay"></div>
-      <div class="fw-content">
-        <span class="fw-badge">4x4 · Touring · Cameras</span>
-        <h1>4x4 lighting, cameras & comms.</h1>
-        <p>Perfect for tradies, fleets and weekend rigs.</p>
-        <div class="fw-actions">
-          <a href="#services" class="btn-primary">See installs</a>
-          <a href="#contact" class="btn-ghost">Request quote</a>
-        </div>
-      </div>
-    </article>
-
-    <!-- slide 3 -->
-    <article class="fw-slide" style="background-image: url('images/collab/boat-scaled-300x200.jpg');">
-      <div class="fw-overlay"></div>
-      <div class="fw-content">
-        <span class="fw-badge">Marine & Leisure</span>
-        <h1>Marine audio that can handle salt & spray.</h1>
-        <p>Boat and PWC audio fitted locally in Newcastle.</p>
-        <div class="fw-actions">
-          <a href="#contact" class="btn-primary">Book marine job</a>
-          <a href="#services" class="btn-ghost">All services</a>
-        </div>
-      </div>
-    </article>
+<div class="slider">
+  <div class="slides">
+    <img src="images/alexandr_bendus-hklONZsQr9k-unsplash.jpg" class="slide active" />
+    <img src="images/alwin-sunny-gaP0lpKZJ54-unsplash.jpg" class="slide" />
+    <img src="images/onno-a-mnWMkQXMPOg-unsplash.jpg" class="slide" />
   </div>
 
-  <!-- slider buttons -->
-  <div class="fw-dots" id="fwDots">
-    <button class="fw-dot active" data-slide="0"></button>
-    <button class="fw-dot" data-slide="1"></button>
-    <button class="fw-dot" data-slide="2"></button>
+  <div class="bottom-center">
+    <h3 class="luxury-heading">Experience True Modification</h3>
+    <p class="luxury-subtitle">Premium services which doesn't break bank.</p>
+
+    <div class="buttons">
+      <a href="#contact" style="background-color: transparent;"><button class="btn primary">Book Now</button></a>
+      <a href="#contact" style="background-color: transparent;"><button class="btn secondary">Get in Touch</button></a>
+    </div>
+
+    <div class="indicators">
+      <span class="dot active" onclick="showSlide(0)"></span>
+      <span class="dot" onclick="showSlide(1)"></span>
+      <span class="dot" onclick="showSlide(2)"></span>
+    </div>
   </div>
-</section>
+</div>
     <!-- CATEGORIES -->
     <section class="section" id="categories">
       <div class="container">
