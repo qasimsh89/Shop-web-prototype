@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newcastle Pro Sound — Prototype</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- JS (this is the correct way) -->
+  <script src="functions.js" defer></script>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Newcastle Pro Sound — Car • Marine • 4x4 • Fleet</span>
+      <a href="#contact" class="top-link">Book install</a>
+    </div>
+  </div>
+
+  <header>
+    <div class="container header-inner">
+      <div class="logo">
+        <div class="logo-dot">NPS</div>
+        <div>Newcastle Pro Sound</div>
+      </div>
+      <nav class="nav">
+        <a href="#hero">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="products.html">Products</a>
+        <a href="#services">Installs</a>
+        <a href="#contact" class="btn-primary-sm">Contact</a>
+      </nav>
+      <button class="mobile-toggle" id="mobileToggle">☰</button>
+    </div>
+
+<!-- mobile drawer -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html#hero">Home</a>
+  <a href="index.html#categories">Categories</a>
+  <a href="products.html">Products</a>
+  <a href="index.html#services">Installs</a>
+  <a href="index.html#contact">Contact</a>
+</div>
+
+<!-- overlay -->
+<div class="nav-overlay" id="navOverlay"></div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div>
+          <span class="badge">Prototype for rebuild · WordPress-ready</span>
+          <h1>Welcome to Newcastle Pro Sound Web Prototype.</h1>
+          <p class="lead">
+            This is a preview of how we can reorganise services, add better imagery, and make it easier for customers to find installs and products.
+          </p>
+          <div class="actions">
+            <a href="#contact" class="btn-primary">Let's build it</a>
+            <a href="#services" class="btn-ghost">See install sections →</a>
+          </div>
+          <div class="hero-meta">
+            <span>Security + performance in scope</span>
+            <span>WooCommerce ready</span>
+            <span>2k-3k product import</span>
+          </div>
+        </div>
+
+        <!-- this MUST point to the exact filename in /images -->
+        <div class="hero-img-wrap reveal">
+          <img src="images/jakob-rosen-JUkrwViCvyE-unsplash.jpg" alt="Workshop entry">
+          <div class="hero-overlay">
+            <div>
+              <small>Current site scan</small>
+              <strong>Critical security issues</strong>
+            </div>
+            <div style="text-align:right">
+              <small>Target</small>
+              <strong>Rebuild in WP</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Shop / Service Categories</h2>
+            <p>These are the categories we’ll surface on the homepage for mobile customers.</p>
+          </div>
+        </div>
+        <div class="grid categories-grid reveal">
+          <div class="card cat">
+            <h3>Car Audio</h3>
+            <p>Head units, amps, subs, DSP.</p>
+            <a href="#">View range →</a>
+          </div>
+          <div class="card cat">
+            <h3>4x4 & Touring</h3>
+            <p>Comms, lighting, rugged installs.</p>
+            <a href="#">View range →</a>
+          </div>
+          <div class="card cat">
+            <h3>Reverse / Camera</h3>
+            <p>Dash, rear, fleet monitoring.</p>
+            <a href="#">View range →</a>
+          </div>
+          <div class="card cat">
+            <h3>Marine / Leisure</h3>
+            <p>Weather-proof sound.</p>
+            <a href="#">View range →</a>
+          </div>
+          <div class="card cat">
+            <h3>Security</h3>
+            <p>Alarms, GPS, immobilisers.</p>
+            <a href="#">View range →</a>
+          </div>
+          <div class="card cat">
+            <h3>Custom Installs</h3>
+            <p>OEM look, hidden audio.</p>
+            <a href="#">View range →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Install Services</h2>
+            <p>Replaced every image with one you provided — no 404 on client side.</p>
+          </div>
+        </div>
+        <div class="grid service-grid reveal">
+          <div class="card service-card">
+            <img src="images/alwin-sunny-gaP0lpKZJ54-unsplash.jpg" alt="Interior with multimedia">
+            <div class="service-body">
+              <h3>Head Units & OEM Upgrades</h3>
+              <p>Apple CarPlay / Android Auto, steering wheel controls retained.</p>
+            </div>
+          </div>
+
+          <div class="card service-card">
+            <img src="images/alexandr_bendus-hklONZsQr9k-unsplash.jpg" alt="4x4 vehicle">
+            <div class="service-body">
+              <h3>4x4 / Touring Installs</h3>
+              <p>UHF, cameras, lighting, power for off-road & work vehicles.</p>
+            </div>
+          </div>
+
+          <div class="card service-card">
+            <img src="images/josue-soto-a1Ynfy-mjZU-unsplash.jpg" alt="Camera / monitoring device">
+            <div class="service-body">
+              <h3>Reverse & Camera Systems</h3>
+              <p>Dash, rear + recording for fleet / high-value vehicles.</p>
+            </div>
+          </div>
+
+          <div class="card service-card">
+            <img src="images/jason-williams-MTajoakwU7k-unsplash.jpg" alt="Car audio subs in trunk">
+            <div class="service-body">
+              <h3>Custom Audio & Sub Installs</h3>
+              <p>Clean boot builds, tuned for your vehicle.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Sample Product Grid</h2>
+            <p>This is what WooCommerce can output on the homepage.</p>
+          </div>
+        </div>
+        <div class="grid prod-grid reveal">
+          <div class="card prod">
+            <div class="prod-img">
+              <img src="images/onno-a-mnWMkQXMPOg-unsplash.jpg" alt="Car speakers">
+            </div>
+            <h3>Premium Component Speakers</h3>
+            <p>Matched set — ideal upsell.</p>
+            <span class="price">$699.00</span>
+          </div>
+
+          <div class="card prod">
+            <div class="prod-img">
+              <img src="images/jason-williams-MTajoakwU7k-unsplash.jpg" alt="Subwoofers">
+            </div>
+            <h3>Boot Sub Pack</h3>
+            <p>Box + wiring + tuning.</p>
+            <span class="price">$899.00</span>
+          </div>
+
+          <div class="card prod">
+            <div class="prod-img">
+              <img src="images/alexandr_bendus-hklONZsQr9k-unsplash.jpg" alt="4x4 vehicle on dirt">
+            </div>
+            <h3>4x4 Camera Bundle</h3>
+            <p>Front / rear / DVR kit.</p>
+            <span class="price">$545.00</span>
+          </div>
+
+          <div class="card prod">
+            <div class="prod-img">
+              <img src="images/alwin-sunny-gaP0lpKZJ54-unsplash.jpg" alt="Interior lighting">
+            </div>
+            <h3>Interior Upgrade Kit</h3>
+            <p>Lighting + trim + screen.</p>
+            <span class="price">$420.00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- BRANDS / PARTNERS -->
+<section class="section brands" aria-label="Brands we supply and install">
+  <div class="container">
+    <div class="brands-head">
+      <h2>Brands we supply & install</h2>
+      <p>Authorised / preferred products we work with for car, 4x4, marine and home audio.</p>
+    </div>
+
+    <div class="brands-grid">
+      <div class="brand-item">
+        <img src="images/collab/Kenwood.jpg" alt="Kenwood" />
+      </div>
+      <div class="brand-item">
+        <img src="images/collab/Kicker.jpg" alt="Kicker Performance Audio" />
+      </div>
+      <div class="brand-item">
+        <img src="images/collab/Pioneer.jpg" alt="Pioneer" />
+      </div>
+      <div class="brand-item">
+        <img src="images/collab/Rockford-Fosgate.jpg" alt="Rockford Fosgate" />
+      </div>
+      <div class="brand-item">
+        <img src="images/collab/Stinger.jpg" alt="Stinger" />
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- CONTACT -->
+    <section class="section">
+      <div class="container contact reveal" id="contact">
+        <div>
+          <h2>Ready to turn this into the real site?</h2>
+          <p>I’ll port this to WordPress (WPBakery) and match the product structure you showed me.</p>
+        </div>
+        <form class="contact-form">
+          <input type="text" placeholder="Your name" required />
+          <input type="email" placeholder="Business email" required />
+          <input type="tel" placeholder="Phone" />
+          <textarea rows="4" placeholder="Tell me what to prioritise (shop, installs, AI)..."></textarea>
+          <button type="submit" class="btn-primary">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Prototype built by Muhammad Qasim — Freelance Full-Stack Developer ·
+    <a href="https://www.qasim.software/">Conatact me</a> · © 2025
+  </footer>
+
+
+</body>
+</html>
