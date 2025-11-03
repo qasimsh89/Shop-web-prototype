@@ -146,9 +146,12 @@ nav.nav a:hover {
   position: relative;
 }
 
-.fw-slide {
+.fw-hero .fw-slide {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -160,11 +163,11 @@ nav.nav a:hover {
   pointer-events: none;
 }
 
-.fw-slide.active {
+.fw-hero .fw-slide.active {
   opacity: 1;
   pointer-events: auto;
+  z-index: 2;
 }
-
 .fw-overlay {
   position: absolute;
   inset: 0;
