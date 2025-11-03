@@ -54,18 +54,17 @@
   </header>
 
   <main>
-<!-- HERO SLIDER (freefrontend-style, adapted) -->
+<!-- HERO SLIDER (robust version) -->
 <section class="hero-slider" id="hero">
-  <!-- slide 1 -->
+  <!-- radios -->
   <input type="radio" name="slider" id="slide-1" checked>
-  <!-- slide 2 -->
   <input type="radio" name="slider" id="slide-2">
-  <!-- slide 3 -->
   <input type="radio" name="slider" id="slide-3">
 
   <div class="slides">
-    <!-- 1 -->
-    <div class="slide s1" style="background-image:url('images/caraudio.png');">
+    <!-- slide 1 -->
+    <article class="slide">
+      <img class="slide-bg" src="images/product-images/caraudio.png" alt="Car audio hero">
       <div class="slide-overlay"></div>
       <div class="slide-content">
         <span class="tag">Car Audio · CarPlay · OEM</span>
@@ -76,9 +75,11 @@
           <a href="#categories" class="btn-ghost">Browse products</a>
         </div>
       </div>
-    </div>
-    <!-- 2 -->
-    <div class="slide s2" style="background-image:url('images/ultravision.png');">
+    </article>
+
+    <!-- slide 2 -->
+    <article class="slide">
+      <img class="slide-bg" src="images/product-images/ultravision.png" alt="4x4 lighting hero">
       <div class="slide-overlay"></div>
       <div class="slide-content">
         <span class="tag">4x4 · Cameras · Fleet</span>
@@ -89,9 +90,11 @@
           <a href="#contact" class="btn-ghost">Request quote</a>
         </div>
       </div>
-    </div>
-    <!-- 3 -->
-    <div class="slide s3" style="background-image:url('images/boat-scaled-300x200.jpg');">
+    </article>
+
+    <!-- slide 3 -->
+    <article class="slide">
+      <img class="slide-bg" src="images/collab/boat-scaled-300x200.jpg" alt="Marine audio hero">
       <div class="slide-overlay"></div>
       <div class="slide-content">
         <span class="tag">Marine & Leisure</span>
@@ -102,10 +105,10 @@
           <a href="#services" class="btn-ghost">All services</a>
         </div>
       </div>
-    </div>
+    </article>
   </div>
 
-  <!-- dots / nav -->
+  <!-- dots -->
   <div class="nav-dots">
     <label for="slide-1"></label>
     <label for="slide-2"></label>
